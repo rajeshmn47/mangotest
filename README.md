@@ -1,93 +1,120 @@
-# dream11-game-code-front
+# ⚡ Support Our Backend Infrastructure
 
+## 🚀 Why We Need Your Support  
+We are committed to delivering a **robust and high-performing platform** that provides **real-time updates, smooth performance, and a seamless user experience**. However, maintaining backend servers, ensuring uptime, and handling live data processing comes with significant operational costs.
 
+Your generous support will help us **sustain, improve, and scale** our infrastructure, ensuring uninterrupted service for all users.
 
-## Getting started
+## 🏗️ How Your Support Helps  
+Your contributions will directly support:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- 🔹 **Server Hosting** – Keeping the backend stable and always online  
+- 🔹 **Database Management** – Storing and retrieving crucial match data efficiently  
+- 🔹 **API Costs** – Handling real-time updates without delays  
+- 🔹 **Infrastructure Scaling** – Expanding to support more users and new features  
+- 🔹 **Security & Maintenance** – Protecting the platform from potential threats  
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## 💙 How You Can Support  
+If you find value in our platform, please consider supporting us through **Google Pay (GPay) or Buy Me a Coffee:**
 
-## Add your files
+📌 **GPay UPI ID:** `7259293140@ybl`  
+📌 **Buy Me a Coffee:** [Click here to support](https://buymeacoffee.com/rajeshmn47)
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+📌 **Scan the QR code below to contribute via UPI:**
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/ktkeyur/dream11-game-code-front.git
-git branch -M main
-git push -uf origin main
-```
+<img src="https://github.com/user-attachments/assets/43233828-791c-4bf0-a988-4ca28b28ed7d" width="250" height="300" />
 
-## Integrate with your tools
+Even a **small contribution** makes a huge difference! Every bit of support helps us keep the platform running smoothly.
 
-- [ ] [Set up project integrations](https://gitlab.com/ktkeyur/dream11-game-code-front/-/settings/integrations)
+## 🙌 Thank You!  
+Your support means the world to us. With your help, we can continue providing the best experience possible.  
+📧 **For any queries, feel free to reach out!**
 
-## Collaborate with your team
+---
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+# 🏆 About This Project
 
-## Test and Deploy
+This project is a **fully functional Dream11 clone**, packed with exciting features:
 
-Use the built-in continuous integration in GitLab.
+- ✅ **Email OTP Authentication**  
+- ✅ **Forgot Password Functionality**  
+- ✅ **Upcoming Match Listings**  
+- ✅ **Team Management (Create, Edit, Remove Teams)**  
+- ✅ **Join Specific Contests**  
+- ✅ **Live Commentary (Powered by Firebase Realtime Database)**  
+- ✅ **Live Scores & Leaderboards**  
+- ✅ **Prize Distribution Based on Leaderboard Rankings**  
+- ✅ **Continuous Player Points Updates**  
+- ✅ **Secure Backend to Prevent Bot Attacks**  
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### 📸 Screenshots
 
-***
+<p>
+<img src="https://github.com/rajeshmn47/dream-11-clone-mern-stack/assets/24763499/2a8a4ee1-3fc3-4105-b3b4-f3c02ce50f7f" width="328" height="600" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/24763499/231622101-c53fa343-ddcd-4485-8e46-3ca6b1032f8d.png" width="328" height="600" />
+</p>
 
-# Editing this README
+<p>
+<img src="https://user-images.githubusercontent.com/24763499/231621706-ea780be6-bc6f-4dc6-9dd8-577d7c49f9c7.png" width="328" height="600" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/24763499/212312487-4f49ee29-d0ec-422b-9dc2-8bb918dc6614.png" width="328" height="500" />
+</p>
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+<p>
+<img src="https://user-images.githubusercontent.com/24763499/231621529-85eda44e-cdf7-428d-a565-741ce34d9425.png" width="328" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/24763499/212457726-7fe157ba-01b6-4669-acca-8413c2194cc0.png" width="328" height="500" />
+</p>
 
-## Suggestions for a good README
+<p>
+<img src="https://user-images.githubusercontent.com/24763499/212457733-cd239d1a-fd45-4189-aac4-bc8d28e73a62.png" width="328" height="500" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://user-images.githubusercontent.com/24763499/210806922-a0b21cdc-c444-4e27-ab84-e1e7ebbfc3ca.png" width="328" height="500" />
+</p>
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+<img src="https://user-images.githubusercontent.com/24763499/210806961-5d84176a-8738-46f4-ae70-f80d771f6401.png" width="328" height="500" />
 
-## Name
-Choose a self-explaining name for your project.
+---
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+# 🚀 Getting Started
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## 📜 Available Scripts
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+In the project directory, you can run:
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### `npm start`
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### `npm test`
+Launches the test runner in the interactive watch mode. See more about [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### `npm run build`
+Builds the app for production to the `build` folder, optimizing performance.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### `npm run eject`
+This permanently removes the single build dependency and allows full customization of configurations.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## 📚 Learn More
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+- [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+- [React Documentation](https://reactjs.org/)
+- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### 🔍 `npm run build` fails to minify?
+See [troubleshooting guide](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify).
 
-## License
-For open source projects, say how it is licensed.
+---
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## 🚀 Stay Connected
+- 🌐 **Website:** github.com/rajeshmn47 
+- 📧 **Contact:** rajeshmn47@gmail.com  
+
+Your support helps keep this project running. **Thank you!** 🙌
+
