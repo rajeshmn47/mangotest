@@ -134,7 +134,7 @@ export function Navbar({ home }) {
         <Center>
           <EmojiIcon />
           {/*{config?.[0]?.name}*/}
-          FC4U
+          mango11
         </Center>
         <RightSide>
           <NotificationAddOutlinedIcon
