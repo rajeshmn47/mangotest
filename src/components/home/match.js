@@ -111,13 +111,13 @@ const Spanner = styled.div`
   width: 20px;
   height: 5px;
 `;
-export function Match({ u, live }) {
+export function Match({ u, live, setOpen, open }) {
   const { user, isAuthenticated, error } = useSelector((state) => state.user);
   const [upcoming, setUpcoming] = useState([]);
   const [loading, setLoading] = useState(true);
   const [date, setDate] = useState();
   const [past, setPast] = useState([]);
-  const [open, setOpen] = useState(false);
+  //const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
     const i = setInterval(() => {
@@ -133,9 +133,14 @@ export function Match({ u, live }) {
       navigate('/login');
     }
   }, []);
-  const handleClick = () => {
+
+  const handleClick = (e) => {
+    console.log('clicked');
     setOpen(true);
+    e.stopPropagation();
+    e.preventDefault();
   };
+
   return (
     <div
       className="matchcontainer"
@@ -175,7 +180,7 @@ export function Match({ u, live }) {
         >
           {live || u.lineups}
         </h5>
-        <NotificationAddOutlinedIcon style={{ fontSize: '20px' }} />
+        <NotificationAddOutlinedIcon style={{ fontSize: '20px', zIndex: 1000 }} onClick={(e) => handleClick(e)} />
       </Top>
       <div className="match">
         <div className="matchcenter">
@@ -205,7 +210,7 @@ export function Match({ u, live }) {
             <h5 className={u.result == 'Yes' ? 'completed' : 'time'}>
               {!(u.result == 'Yes') ? (
                 sameDayorNot(new Date(), new Date(u.date))
-                || isTommorrow(new Date(), new Date(u.date)) ? (
+                  || isTommorrow(new Date(), new Date(u.date)) ? (
                   <div>
                     <p>{hoursRemaining(u.date, 'k', date)}</p>
                     <p
@@ -221,17 +226,17 @@ export function Match({ u, live }) {
                         && getDisplayDate(u.date, 'i', date)}
                     </p>
                   </div>
-                  ) : (
-                    <p
-                      style={{
-                        color: '#e10000',
-                        textTransform: 'auto',
-                        fontWeight: '200',
-                      }}
-                    >
-                      {getDisplayDate(u.date, 'i') && getDisplayDate(u.date, 'i')}
-                    </p>
-                  )
+                ) : (
+                  <p
+                    style={{
+                      color: '#e10000',
+                      textTransform: 'auto',
+                      fontWeight: '200',
+                    }}
+                  >
+                    {getDisplayDate(u.date, 'i') && getDisplayDate(u.date, 'i')}
+                  </p>
+                )
               ) : (
                 'Completed'
               )}

@@ -94,9 +94,46 @@ const DeatilTop = styled.div`
   }
 `;
 
+const NotificationContainer = styled.div`
+  width: 320px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: 100%;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+`;
+
+const NotificationHeader = styled.h4`
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+`;
+
+const NotificationItem = styled.div`
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  color: #333;
+  font-size: 14px;
+`;
+
+const EmptyMessage = styled.p`
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 40px;
+`;
+
 export function Navbar({ home }) {
   const { user } = useSelector((state) => state.user);
   const { config } = useSelector((state) => state.config);
+  const [notificationOpen, setNotificationOpen] = useState(false);
   console.log(config, 'configs')
   const location = useLocation();
   const [open, setOpen] = useState(false);
@@ -132,12 +169,13 @@ export function Navbar({ home }) {
           {user?.username && user?.username.charAt(0)}
         </Account>
         <Center>
-          <EmojiIcon />
           {/*{config?.[0]?.name}*/}
-          mango11
+          <img src='./mango.png' alt='logo' style={{ width: '110px', maxHeight: '40px', marginLeft: '10px' }} />
         </Center>
         <RightSide>
+
           <NotificationAddOutlinedIcon
+            onClick={() => setNotificationOpen(true)}
             style={{
               marginRight: '10px',
               cursor: 'pointer',
@@ -146,6 +184,20 @@ export function Navbar({ home }) {
               strokeWidth: '1.5',
             }}
           />
+
+          <Drawer anchor="right" open={notificationOpen} onClose={() => setNotificationOpen(false)}>
+            <NotificationContainer>
+              <NotificationHeader>Notifications</NotificationHeader>
+              {user?.notifications?.length > 0 ? (
+                user.notifications.map((note, idx) => (
+                  <NotificationItem key={idx}>{note.message}</NotificationItem>
+                ))
+              ) : (
+                <EmptyMessage>No new notifications</EmptyMessage>
+              )}
+            </NotificationContainer>
+          </Drawer>
+
           <AccountBalanceWalletOutlinedIcon
             onClick={() => handleClick()}
             style={{

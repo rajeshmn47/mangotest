@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { SportsCricketOutlined } from '@mui/icons-material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import NotificationAddOutlinedIcon from '@mui/icons-material/NotificationAddOutlined';
-import { Button, Grid } from '@mui/material';
+import { Button, Checkbox, Dialog, DialogActions, DialogContent, DialogTitle, FormControlLabel, FormGroup, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { GrMultimedia } from 'react-icons/gr';
 import { useSelector } from 'react-redux';
@@ -229,11 +229,12 @@ export function Home() {
                             {' '}
                             vs
                             <span style={{ marginLeft: '5px' }}>
-                              {u?.home.code}
+                              {u?.home.code}co
                             </span>
                           </h5>
                           <NotificationAddOutlinedIcon
                             style={{ fontSize: '18px' }}
+                            onClick={()=>setOpen(true)}
                           />
                         </Top>
                         <div className="match">
@@ -377,7 +378,7 @@ export function Home() {
                 <>
                   {upcoming.map((u) => (
                     <Grid item sm={12} xs={12} lg={6} md={6}>
-                      <Match u={u} />
+                      <Match u={u} open={open} setOpen={setOpen}/>
                     </Grid>
                   ))}
                 </>
@@ -388,6 +389,21 @@ export function Home() {
           </AllMatches>
         </div>
       </div >
+      <Dialog open={open} onClose={() => setOpen(false)}>
+        <DialogTitle>Manage Notifications</DialogTitle>
+        <DialogContent>
+          <FormGroup>
+            <FormControlLabel control={<Checkbox />} label="Lineups out" />
+            <FormControlLabel control={<Checkbox />} label="Match start" />
+            <FormControlLabel control={<Checkbox />} label="Live score" />
+            <FormControlLabel control={<Checkbox />} label="Match result" />
+          </FormGroup>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setOpen(false)}>Close</Button>
+        </DialogActions>
+      </Dialog>
+
       <Bottomnav />
     </>
   );
