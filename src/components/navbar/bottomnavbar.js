@@ -30,18 +30,18 @@ export function Bottomnav() {
         <EmojiEventsOutlinedIcon style={{ fontSize: '20px' }} />
         My Matches
       </div>
-      <div>
+      {/*<div>
         <FeedOutlinedIcon style={{ fontSize: '20px' }} />
-        Feed
+        GamizoCoins
       </div>
       <div>
         <GroupsOutlinedIcon style={{ fontSize: '20px' }} />
-        Groups
+        Refer & Win
       </div>
       <div>
         <MoreHorizOutlinedIcon style={{ fontSize: '20px' }} />
-        More
-      </div>
+        Games
+      </div>*/}
     </div>
   );
 }

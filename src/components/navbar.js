@@ -207,9 +207,10 @@ export function Navbar({ home }) {
           <p>cash bonus</p>
           <h5>₹ 0</h5>
         </Deatil>
-      </Drawer>
+      </Drawer>{/*
+      <Bottomnav />
       {home && (
-        <div className="hometop">
+        {/*<div className="hometop">
           <div
             onClick={() => navigate('/')}
             className={
@@ -253,7 +254,7 @@ export function Navbar({ home }) {
             <h5>Hockey</h5>
           </div>
         </div>
-      )}
+      )}*/}
     </>
   );
 }

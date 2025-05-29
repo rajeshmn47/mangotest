@@ -10,7 +10,26 @@
 
 # production
 /build
-
+/.gradle
+/app
+/gradle
+android.keystore
+app-release-bundle.aab
+app-release-signed.apk
+app-release-unsigned.apk
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+mango11.apk
+settings.gradle
+store_icon.png
+twa-manifest.json
+my-key.keystore
+manifest-checksum.txt
+/.vscode
+app-release-signed.apk.idsig
+app-release-unsigned-aligned.apk
 # misc
 .DS_Store
 .env.local
