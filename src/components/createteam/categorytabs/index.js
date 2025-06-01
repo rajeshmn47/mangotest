@@ -21,6 +21,7 @@ import {
   getImgurl,
 } from '../../../utils/img_url';
 import Loader from '../../loader';
+import SwipeableViews from 'react-swipeable-views';
 
 const ContestsContainer = styled(Grid)``;
 const ContestContainer = styled.div`
@@ -105,6 +106,8 @@ const CreateTeam = styled.div`
 
 const PlayersList = styled.div`
   padding: 0 0;
+  height: 400px;
+  overflow-y: auto;
 `;
 
 const EachPlayer = styled.div`
@@ -319,6 +322,10 @@ export default function CategoryTabs({
     });
     setPlayers([...po]);
   };
+
+  const handleSwipe = (index) => {
+    setValue(index);
+  };
   console.log(lmPlayers, 'lmplayers');
 
   return (
@@ -361,7 +368,7 @@ export default function CategoryTabs({
           </Tabs>
         </Box>
         {!loading ? (
-          <>
+          <SwipeableViews index={value} onChangeIndex={handleSwipe} enableMouseEvents>
             <TabPanel value={value} index={0}>
               <PlayersList>
                 <>
@@ -617,7 +624,7 @@ export default function CategoryTabs({
                 </>
               </PlayersList>
             </TabPanel>
-          </>
+          </SwipeableViews>
         ) : (
           <Loader />
         )}
