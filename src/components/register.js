@@ -80,12 +80,12 @@ export function Register() {
   const onSubmit = async (formData) => {
     setEmail(formData.email);
     try {
-      const data = await axios.post(`${URL}/auth/register`, formData);
+      const data = await axios.post(`${URL}/auth/registerold`, formData);
       if (data.data.success) {
         setSuccess(data.data.message);
         alert.success(data.data.message);
-        //setOpen(true);
-        navigate('/login')
+        setOpen(true);
+        //navigate('/login')
       } else {
         alert.error(e.response.data.message);
         setErr(data.data.message);

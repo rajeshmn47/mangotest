@@ -15,6 +15,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 import { logout } from '../actions/userAction';
 import LeftDrawer from './navbar/leftDrawer';
+import { FURL } from '../constants/userConstants';
 
 const RightSide = styled.div`
   width: 90px;
@@ -170,7 +171,7 @@ export function Navbar({ home }) {
         </Account>
         <Center>
           {/*{config?.[0]?.name}*/}
-          <img src='./mango.png' alt='logo' style={{ width: '110px', maxHeight: '40px', marginLeft: '10px' }} />
+          <img src={`${FURL}/mango.png`} alt='logo' style={{ width: '110px', maxHeight: '40px', marginLeft: '10px' }} />
         </Center>
         <RightSide>
 

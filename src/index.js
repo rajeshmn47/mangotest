@@ -12,10 +12,10 @@ import store from './store';
 import zIndex from '@mui/material/styles/zIndex';
 
 const options = {
-  timeout: 5000,
-  position: positions.MIDDLE_LEFT,
+  timeout: 500000,
+  position: positions.BOTTOM_CENTER,
   transition: transitions.SCALE,
-  zIndex: 10000
+  zIndex: 10000,
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

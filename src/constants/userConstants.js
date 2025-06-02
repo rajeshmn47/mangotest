@@ -89,7 +89,7 @@ function getfrontendurl() {
   if (current == 'local') {
     return 'http://localhost:3000';
   }
-  return 'https://dream-11-clone-nu.vercel.app';
+  return 'https://mangogames.fun';
 }
 
 export const URL = geturl();
