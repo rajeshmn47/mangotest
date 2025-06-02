@@ -27,6 +27,7 @@ import Stats from './stats';
 import { TeamShort } from './TeamShort';
 //import ReactPullToRefresh from 'react-pull-to-refresh';
 import PullToRefresh from 'react-simple-pull-to-refresh';
+import SwipeableViews from 'react-swipeable-views';
 // Import the CSS
 
 const ContestsContainer = styled(Grid)``;
@@ -375,6 +376,10 @@ export default function MatchTabs({ tabs, g, livescore, getdata }) {
     }
   }
 
+  const handleSwipe = (index) => {
+    setValue(index);
+  };
+
   const handlejoin = async (t) => {
     console.log('join contest');
     const joinedC = await API.get(`${URL}/getjoinedcontest/${id}`);
@@ -701,20 +706,22 @@ export default function MatchTabs({ tabs, g, livescore, getdata }) {
                       ))}
                   </Tabs>
                 </Box>
-                {tabConfig
-                  .filter((tab) => tab.condition) // Only render TabPanels that meet the condition
-                  .map((tab, index) => {
-                    return (
-                      tab?.label == "Commentary" ?
-                        <TabP key={index} value={value} index={index}>
-                          {tab.content}
-                        </TabP>
-                        :
-                        <TabPanel key={index} value={value} index={index}>
-                          {tab.content}
-                        </TabPanel>
-                    )
-                  })}
+                <SwipeableViews index={value} onChangeIndex={handleSwipe} enableMouseEvents>
+                  {tabConfig
+                    .filter((tab) => tab.condition) // Only render TabPanels that meet the condition
+                    .map((tab, index) => {
+                      return (
+                        tab?.label == "Commentary" ?
+                          <TabP key={index} value={value} index={index}>
+                            {tab.content}
+                          </TabP>
+                          :
+                          <TabPanel key={index} value={value} index={index}>
+                            {tab.content}
+                          </TabPanel>
+                      )
+                    })}
+                </SwipeableViews>
               </Box>
             </div>
           </Box>
