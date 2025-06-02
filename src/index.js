@@ -12,7 +12,7 @@ import store from './store';
 import zIndex from '@mui/material/styles/zIndex';
 
 const options = {
-  timeout: 500000,
+  timeout: 5000,
   position: positions.BOTTOM_CENTER,
   transition: transitions.SCALE,
   zIndex: 10000,

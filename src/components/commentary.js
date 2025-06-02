@@ -220,7 +220,7 @@ export function Commentary({ matchdata }) {
               {p.videoLink &&
                 <>
                   <video id="videoPlayer" width="100%" style={{maxHeight:'60px'}} controls muted={true}>
-                    <source src={`${URL}/mockvideos/${p.videoLink}`} type="video/mp4" />
+                    <source src={`https://gamizo.duckdns.org/mockvideos/${p.videoLink}`} type="video/mp4" />
                   </video>
                 </>}
             </>
