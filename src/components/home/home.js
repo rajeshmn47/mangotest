@@ -180,7 +180,7 @@ export function Home() {
     <>
       <Navbar home />
       <div className="homecontainer">
-        <CricketBg id="section1">
+        {past?.length > 0 && <CricketBg id="section1">
           <TopDiv>
             <h3 style={{ color: '#FFFFFF', position: 'relative', whiteSpace: 'nowrap' }}>
               My Matches
@@ -234,7 +234,7 @@ export function Home() {
                           </h5>
                           <NotificationAddOutlinedIcon
                             style={{ fontSize: '18px' }}
-                            onClick={()=>setOpen(true)}
+                            onClick={() => setOpen(true)}
                           />
                         </Top>
                         <div className="match">
@@ -355,9 +355,9 @@ export function Home() {
               ),
             )
           ) : (
-            <div className="notfound">No results found :(</div>
+            <div className="notfoun"></div>
           )}
-        </CricketBg>
+        </CricketBg>}
         {live?.length > 0 && (
           <div className="matches">
             <h3>Live Matches</h3>
@@ -378,7 +378,7 @@ export function Home() {
                 <>
                   {upcoming.map((u) => (
                     <Grid item sm={12} xs={12} lg={6} md={6}>
-                      <Match u={u} open={open} setOpen={setOpen}/>
+                      <Match u={u} open={open} setOpen={setOpen} />
                     </Grid>
                   ))}
                 </>
