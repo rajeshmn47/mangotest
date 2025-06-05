@@ -42,3 +42,4 @@ yarn-debug.log*
 yarn-error.log*
 eslint "**/*.js" --ignore-pattern node_modules/
 .expo
+/apk
