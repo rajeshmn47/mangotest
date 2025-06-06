@@ -3,9 +3,9 @@
       "relation": ["delegate_permission/common.handle_all_urls"],
       "target": {
         "namespace": "android_app",
-        "package_name": "app.vercel.mango11.twa",
+        "package_name": "mango11.twa",
         "sha256_cert_fingerprints": [
-          "10:5F:64:09:00:0F:C0:4F:D7:5C:D7:DB:74:FA:22:E2:1B:68:CE:65:3B:21:7F:83:B6:D0:57:14:D2:01:8F:2A"  
+          "4F:74:08:B1:FF:46:C2:15:46:62:FC:CF:84:9F:35:7A:B5:6A:32:21:43:B5:88:72:EE:50:72:37:39:21:0C:BE"  
         ]
       }
     }
